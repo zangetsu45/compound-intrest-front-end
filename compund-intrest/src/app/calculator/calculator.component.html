@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+</head>
+<body>
+    <h2>{{job}}</h2>
+    <label>{{principal_label}}</label>
+<input id = "principal" type="number" [(ngModel)]="principal_input" placeholder ="enter principal"> <br>
+<label>{{rate_label}}</label>
+<input id = "rate" type="number" [(ngModel)]="rate_input" placeholder ="enter rate"><br>
+<label>{{time_label}}</label>
+<input id = "time" type="number" [(ngModel)]="time_input" placeholder ="enter time"><br>
+<button (click)="calculate()">submit</button><br>
+<label id ="result" visible = "false"> result = {{result}}</label>
+
+
+</body>
+
+</html>
