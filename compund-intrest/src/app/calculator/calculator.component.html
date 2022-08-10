@@ -4,14 +4,15 @@
 </head>
 <body>
     <h2>{{job}}</h2>
-    <label>{{principal_label}}</label>
-<input id = "principal" type="number" [(ngModel)]="principal_input" placeholder ="enter principal"> <br>
+<br><br>   
+<label>{{principal_label}}</label>
+<input id = "principal" type="number" [(ngModel)]="principal_input" placeholder ="enter principal"> <br> <br>
 <label>{{rate_label}}</label>
-<input id = "rate" type="number" [(ngModel)]="rate_input" placeholder ="enter rate"><br>
+<input id = "rate" type="number" [(ngModel)]="rate_input" placeholder ="enter rate"><br><br>
 <label>{{time_label}}</label>
-<input id = "time" type="number" [(ngModel)]="time_input" placeholder ="enter time"><br>
-<button (click)="calculate()">submit</button><br>
-<label id ="result1" visible = "false"> result = </label>
+<input id = "time" type="number" [(ngModel)]="time_input" placeholder ="enter time"><br><br>
+<button (click)="calculate()">submit</button><br><br>
+<label id ="result1" visible = "false"> Result = </label>
 <label id="result" >{{result}}</label>
 
 
