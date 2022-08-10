@@ -57,37 +57,7 @@ export class CalculatorComponent implements OnInit {
       "time" : this.time_input
   });
 xhr.send(data);
-/*const dataToSend = JSON.stringify({
-  "principal" : 1000,
-  "rate" : 0.05,
-  "time" : 3
-});
-let dataReceived = ""; 
-fetch("http://localhost:8080/calculator/calculate", {//lvl/4200/lcl8080
-     credentials: "same-origin",
-     mode: "same-origin",
-     method: "get",
-     headers: { "Content-Type": "application/json" },
-     body: dataToSend
-})
-
-    .then(resp => {
-        if (resp.status === 200) {
-            return resp.json()
-        } else {
-            console.log("Status: " + resp.status)
-            return Promise.reject("server")
-        }
-    })
-    .then(dataJson => {
-        dataReceived = JSON.parse(dataJson)
-    })
-    .catch(err => {
-        if (err === "server") return
-        console.log(err)
-    })
-
-  console.log(`Received: ${dataReceived}`)*/  }
+ }
 
   constructor() { }
 
