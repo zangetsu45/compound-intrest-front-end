@@ -57,7 +57,11 @@ export class CalculatorComponent implements OnInit {
       "time" : this.time_input
   });
 xhr.send(data);
+<<<<<<< HEAD
   }
+=======
+ }
+>>>>>>> c114d3bb24c4e52056f1fb994bac9b11497fdcd1
 
   constructor() { }
 
